@@ -18,13 +18,13 @@ namespace KleisnerAdam_Assignment2Exercise3
         }
 
         //size of each tile
-        Size tileSize = new Size(170, 160);
+        Size tileSize = new Size(115, 125);
         //columns and rows of the map
         //by default Points are initialized to 0,0 which is exactly...
         Point[,] map = new Point[3, 3];
         Point[,] temp;
         //the tileset image to use
-        Bitmap tileSet = Properties.Resources.fig_xo_icons;
+        Bitmap tileSet = Properties.Resources.tic_tac_toe1;
         //which part of the tilset represents a selected tile, changing this changes...
         Point selectedTile = new Point(0, 0);
 
@@ -136,6 +136,24 @@ namespace KleisnerAdam_Assignment2Exercise3
             scrollSize.Height = map.GetLength(1) * tileSize.Height;
 
             this.AutoScrollMinSize = scrollSize;
+        }
+
+        private void CustomMapControl_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Point mouseLoc = e.Location;
+
+            mouseLoc.X = e.X - this.AutoScrollPosition.X;
+            mouseLoc.Y = e.Y - this.AutoScrollPosition.Y;
+
+            int x = mouseLoc.X / tileSize.Width;
+            int y = mouseLoc.Y / tileSize.Height;
+
+            if (x < map.GetLength(0) && y < map.GetLength(1))
+            {
+                map[x, y] = SelectedTile;
+            }
+
+            Invalidate();
         }
 
     }

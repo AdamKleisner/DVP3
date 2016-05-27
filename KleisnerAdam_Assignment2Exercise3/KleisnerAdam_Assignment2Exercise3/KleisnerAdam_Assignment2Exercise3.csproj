@@ -66,6 +66,9 @@
     <Compile Include="TileControl.Designer.cs">
       <DependentUpon>TileControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomMapControl.resx">
+      <DependentUpon>CustomMapControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

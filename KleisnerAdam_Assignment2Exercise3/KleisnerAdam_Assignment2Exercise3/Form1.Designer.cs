@@ -37,17 +37,20 @@
             // 
             this.tileControl2.AutoScroll = true;
             this.tileControl2.AutoScrollMinSize = new System.Drawing.Size(353, 181);
-            this.tileControl2.Location = new System.Drawing.Point(13, 13);
+            this.tileControl2.Location = new System.Drawing.Point(13, 12);
             this.tileControl2.Name = "tileControl2";
-            this.tileControl2.Size = new System.Drawing.Size(410, 256);
-            this.tileControl2.TabIndex = 0;
+            this.tileControl2.Size = new System.Drawing.Size(389, 229);
+            this.tileControl2.TabIndex = 2;
             this.tileControl2.Text = "tileControl2";
             this.tileControl2.TileImage = ((System.Drawing.Bitmap)(resources.GetObject("tileControl2.TileImage")));
-            this.tileControl2.TileSize = new System.Drawing.Size(115, 125);
+            this.tileControl2.TileSize = new System.Drawing.Size(115, 115);
+            this.tileControl2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tileControl1_MouseDoubleClick);
             // 
             // customMapControl1
             // 
-            this.customMapControl1.Location = new System.Drawing.Point(629, 129);
+            this.customMapControl1.AutoScroll = true;
+            this.customMapControl1.AutoScrollMinSize = new System.Drawing.Size(510, 480);
+            this.customMapControl1.Location = new System.Drawing.Point(442, 12);
             this.customMapControl1.MapSize = new System.Drawing.Size(3, 3);
             this.customMapControl1.Name = "customMapControl1";
             this.customMapControl1.SelectedTile = new System.Drawing.Point(0, 0);
@@ -61,8 +64,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1286, 752);
-            this.Controls.Add(this.customMapControl1);
             this.Controls.Add(this.tileControl2);
+            this.Controls.Add(this.customMapControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -72,8 +75,8 @@
         #endregion
 
         private TileControl tileControl1;
-        private TileControl tileControl2;
         private CustomMapControl customMapControl1;
+        private TileControl tileControl2;
     }
 }
 

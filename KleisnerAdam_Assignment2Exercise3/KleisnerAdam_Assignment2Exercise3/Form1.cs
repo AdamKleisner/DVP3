@@ -16,5 +16,25 @@ namespace KleisnerAdam_Assignment2Exercise3
         {
             InitializeComponent();
         }
+
+        Point selected;
+        private void tileControl1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Point offset = e.Location;
+            offset.X -= tileControl1.AutoScrollPosition.X;
+            offset.Y -= tileControl1.AutoScrollPosition.Y;
+            selected.X = offset.X / tileControl1.TileSize.Width;
+            selected.Y = offset.Y / tileControl1.TileSize.Height;
+
+            if ((selected.X < tileControl1.TileGridSize.Width && selected.Y < tileControl1.TileGridSize.Height))
+            {
+                tileControl1.selected = selected;
+                tileControl1.Invalidate();
+
+                customMapControl1.SelectedTile = tileControl1.selected;
+            }
+
+        }
+
     }
 }

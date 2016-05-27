@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // CustomMapControl
+            // 
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.CustomMapControl_MouseDoubleClick);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

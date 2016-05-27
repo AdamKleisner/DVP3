@@ -6,3 +6,4 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\KleisnerAdam_Assignment2Exer
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\KleisnerAdam_Assignment2Exercise3\KleisnerAdam_Assignment2Exercise3\obj\Debug\KleisnerAdam_Assignment2Exercise3.csproj.GenerateResource.Cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\KleisnerAdam_Assignment2Exercise3\KleisnerAdam_Assignment2Exercise3\obj\Debug\KleisnerAdam_Assignment2Exercise3.exe
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\KleisnerAdam_Assignment2Exercise3\KleisnerAdam_Assignment2Exercise3\obj\Debug\KleisnerAdam_Assignment2Exercise3.pdb
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\KleisnerAdam_Assignment2Exercise3\KleisnerAdam_Assignment2Exercise3\obj\Debug\KleisnerAdam_Assignment2Exercise3.CustomMapControl.resources
